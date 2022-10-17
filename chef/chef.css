@@ -1,0 +1,1188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Pre-styled css */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 1st Page */
+
+.Container1 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./images/bg-web.png);
+}
+
+.Topbar {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.left {
+    width: 20%;
+    padding: 1rem;
+}
+
+.right {
+    width: 20%;
+    padding: 1rem;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 12rem;
+}
+
+
+/* Slide-nav */
+
+.slide_nav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+    transition: all 0.5s;
+    padding-top: 6rem;
+    margin-left: 0;
+}
+
+.slide_nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 0.8rem 0.8rem 0.8rem 3.2rem;
+    display: block;
+    transition: all 0.3s;
+    line-height: 6rem;
+}
+
+.close-icon {
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+    font-size: 5rem;
+    margin: 0.4rem;
+    color: #000;
+    display: none;
+    cursor: pointer;
+}
+
+.icon {
+    position: fixed;
+    top: 2rem;
+    right: 2.5rem;
+    font-size: 4rem;
+    background: none;
+    border: none;
+    margin: 0.4rem;
+    color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.About_chef {
+    width: 100%;
+    height: 70rem;
+}
+
+.About_text {
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+    height: 18rem;
+}
+
+.About_text p {
+    font-size: 2rem;
+    margin: 1rem;
+    font-family: 'Pacifico', cursive;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.About_text h1 {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.Food_Circle {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l_food {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.r_food {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.food_txt {
+    text-align: center;
+    padding: 2rem;
+}
+
+.food_txt h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.food_txt p {
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+
+
+/* Vaibhava Div */
+
+.Vaibhava_div {
+    width: 100%;
+    height: 78rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v_1 {
+    width: 35rem;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.v_2 {
+    width: 35rem;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.img_v {
+    height: 50%;
+    background-color: #000;
+    width: 100%;
+}
+
+.img_v img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont_v {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cont_v a {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 1.3rem;
+    transition: all 0.4s;
+}
+
+.cont_v a:hover {
+    color: gray;
+    text-decoration: dotted;
+}
+
+.cont_v h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.cont_v p {
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.cont_v span {
+    font-size: 1.8rem;
+    margin: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.All_vaibhava {
+    width: 100%;
+    height: 120rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main_1 {
+    width: 80%;
+    height: 55rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main_2 {
+    width: 80%;
+    height: 55rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.l_main {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.l_main_d {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0rem;
+}
+
+.l_main h1 {
+    font-size: 4rem;
+    font-weight: 550;
+    margin: 2rem;
+}
+
+.l_main_d h1 {
+    font-size: 4rem;
+    font-weight: 550;
+    margin: 2rem;
+}
+
+.l_main p {
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 2.5rem;
+    padding: 0 5.2rem;
+}
+
+.l_main_d p {
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 2.5rem;
+    padding: 0 5.2rem;
+}
+
+.r_main {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r_main_d {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r_main img {
+    width: 45rem;
+    height: 48rem;
+    -webkit-box-shadow: -1px 6px 31px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 6px 31px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 6px 31px -3px rgba(0, 0, 0, 0.75);
+}
+
+.r_main_d img {
+    width: 47rem;
+    height: 53rem;
+    -webkit-box-shadow: -1px 6px 31px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 6px 31px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 6px 31px -3px rgba(0, 0, 0, 0.75);
+}
+
+.img_container {
+    width: 100%;
+    height: 55rem;
+    display: flex;
+    margin-top: 5rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.img_container h1 {
+    font-size: 4rem;
+}
+
+.img_container p {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+}
+
+.Img_flex {
+    display: flex;
+    width: 100%;
+    height: 35rem;
+    margin-top: 6rem;
+}
+
+.Cent_img {
+    width: 33.33%;
+    height: 100%;
+}
+
+.Cent_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.Text_div {
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+}
+
+.Text_div p {
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 6rem 10rem;
+}
+
+.social_icons {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_icon img {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.press {
+    width: 100%;
+    height: 69rem;
+}
+
+.press_text {
+    text-align: center;
+}
+
+.press_text h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 2rem;
+}
+
+.Press_img_top {
+    width: 100%;
+    height: 32rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+.press_d {
+    width: 30rem;
+    height: 100%;
+    padding: 2rem;
+}
+
+.press_d img {
+    width: 100%;
+    height: 25rem;
+    border-radius: 1.2rem;
+    -webkit-box-shadow: -1px 6px 31px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 6px 31px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 6px 31px -3px rgba(0, 0, 0, 0.75);
+}
+
+.Email {
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+}
+
+.Email h2 {
+    font-size: 2.7rem;
+}
+
+.Cho img {
+    width: 5rem;
+    height: 10rem;
+}
+
+.Clients {
+    width: 100%;
+    height: 35rem;
+    margin-top: 4rem;
+    padding: 0 8rem;
+    text-align: center;
+}
+
+.Clients h1 {
+    font-size: 4rem;
+    margin: 3rem;
+}
+
+.Clients img {
+    width: 15rem;
+    height: 20rem;
+}
+
+.Services {
+    width: 100%;
+    height: 80rem;
+    background-image: url(./images/bg-res.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.left_serv {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(10, 60, 244, 0.851);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.left_serv h1 {
+    font-size: 5.5rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.serv_txt {
+    width: 40rem;
+    height: 30rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    top: 12rem;
+}
+
+.left_serv p {
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 2.5rem;
+}
+
+.right_serv {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right_box {
+    width: 90rem;
+    height: 65rem;
+    background-color: rgba(238, 240, 250, 0.900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    left: -10rem;
+    border-radius: 0.34rem;
+}
+
+.box_l {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box_r {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon_box {
+    width: 40rem;
+    height: 15rem;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.box_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.box_txt p {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 2.5rem;
+}
+
+.box_txt h1 {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: normal;
+}
+
+.icon_img {
+    width: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.icon_img img {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0.9rem;
+}
+
+.Youtube {
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.yt-embed {
+    width: 100%;
+    height: 80%;
+}
+
+.yt1 {
+    width: 33.33%;
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width:420px) {
+    .Container1 {
+        background-image: url(./images/bg-mob.png);
+    }
+    * {
+        font-size: 45%;
+    }
+    .logo {
+        width: 75%;
+        height: 68%;
+    }
+    .logo img {
+        width: 10rem;
+    }
+    .Vaibhava_div {
+        flex-direction: column;
+        height: 188rem;
+    }
+    .v_1 {
+        height: 60rem;
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .v_2 {
+        height: 60rem;
+        width: 80%;
+        flex-direction: column;
+    }
+    .All_vaibhava {
+        height: 205rem;
+    }
+    .l_main {
+        width: 100%;
+        height: 79rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .r_main {
+        width: 100%;
+        height: 50rem;
+    }
+    .Main_1 {
+        height: 98rem;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .Main_2 {
+        height: 90rem;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .l_main h1 {
+        font-size: 3.5rem;
+        margin: 2rem 0rem;
+    }
+    .l_main p {
+        padding: 0 1rem;
+    }
+    .r_main img {
+        width: 100%;
+        height: 45rem;
+    }
+    .Img_flex {
+        flex-direction: column;
+    }
+    .Cent_img {
+        width: 100%;
+    }
+    .Text_div {
+        height: 20rem;
+    }
+    .Text_div p {
+        padding: 0 1rem;
+    }
+    .left {
+        width: 50%;
+    }
+    .l_main_d {
+        width: 100%;
+    }
+    .r_main_d {
+        width: 100%;
+    }
+    .r_main_d img {
+        width: 100%;
+        height: 45rem;
+    }
+    .l_main_d h1 {
+        font-size: 3.5rem;
+        margin: 2rem 0rem;
+    }
+    .l_main_d p {
+        padding: 0 2rem;
+    }
+    .About_text {
+        padding: 2rem;
+        height: 28rem;
+    }
+    .About_chef {
+        height: 145rem;
+    }
+    .Food_Circle {
+        height: 110rem;
+        flex-direction: column;
+    }
+    .l_food {
+        width: 100%;
+    }
+    .r_food {
+        width: 100%;
+    }
+    .food_txt {
+        padding: 3rem;
+    }
+    .press {
+        height: 365rem;
+    }
+    .Press_img_top {
+        flex-direction: column;
+        height: 180rem;
+    }
+    .press_d {
+        width: 45rem;
+        height: 45rem;
+    }
+    .press_d img {
+        height: 40rem;
+    }
+    .img_container p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        padding: 0 4rem;
+    }
+    .img_container {
+        height: 145rem;
+    }
+    .social_icons {
+        align-items: none;
+    }
+    .Services {
+        flex-direction: column;
+        height: 155rem;
+    }
+    .left_serv {
+        height: 65rem;
+        width: 100%;
+    }
+    .right_serv {
+        width: 100%;
+        height: 100%;
+    }
+    .right_box {
+        width: 100%;
+        left: 0;
+        height: 110rem;
+        flex-direction: column;
+    }
+    .Youtube {
+        height: 125rem;
+        flex-direction: column;
+    }
+    .yt1 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:420px) and (max-width:768px) {
+    .Container1 {
+        background-image: url(./images/bg-tab.png);
+    }
+    * {
+        font-size: 55%;
+    }
+    .About_chef {
+        height: 80rem;
+    }
+    .About_text {
+        height: 22rem;
+    }
+    .Food_Circle {
+        height: 60rem;
+    }
+    .Vaibhava_div {
+        flex-direction: column;
+        height: 240rem;
+    }
+    .v_1 {
+        height: 75rem;
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .img_v {
+        width: 110%;
+        height: 60%;
+        background: none;
+    }
+    .v_2 {
+        height: 75rem;
+        width: 80%;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .All_vaibhava {
+        height: 200rem;
+    }
+    .l_main {
+        width: 100%;
+        height: 79rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .r_main {
+        width: 100%;
+        height: 50rem;
+    }
+    .Main_1 {
+        height: 90rem;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .Main_2 {
+        height: 85rem;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .l_main h1 {
+        font-size: 3.5rem;
+        margin: 2rem 0rem;
+    }
+    .l_main p {
+        padding: 0 6rem;
+    }
+    .r_main img {
+        width: 80%;
+        height: 100%;
+    }
+    .l_main_d {
+        width: 100%;
+    }
+    .r_main_d {
+        width: 100%;
+    }
+    .r_main_d img {
+        width: 80%;
+        height: 100%;
+    }
+    .l_main_d h1 {
+        font-size: 3.5rem;
+        margin: 2rem 0rem;
+    }
+    .l_main_d p {
+        padding: 0 6rem;
+    }
+    .img_container {
+        height: 124rem;
+    }
+    .Img_flex {
+        flex-direction: column;
+    }
+    .Cent_img {
+        width: 100%;
+    }
+    .Text_div {
+        height: 15rem;
+    }
+    .Text_div p {
+        padding: 0;
+    }
+    .left {
+        width: 50%;
+    }
+    .About_text {
+        padding: 2rem;
+        height: 28rem;
+    }
+    .About_chef {
+        height: 145rem;
+    }
+    .Food_Circle {
+        height: 110rem;
+        flex-direction: column;
+    }
+    .l_food {
+        width: 100%;
+    }
+    .r_food {
+        width: 100%;
+    }
+    .food_txt {
+        padding: 3rem;
+    }
+    .press {
+        height: 362rem;
+    }
+    .press_d {
+        width: 55rem;
+    }
+    .press_d img {
+        height: 40rem;
+    }
+    .Press_img_top {
+        flex-direction: column;
+        height: 180rem;
+    }
+    .img_container p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        padding: 0 4rem;
+    }
+    .img_container {
+        height: 175rem;
+    }
+    .Img_flex {
+        height: 45rem;
+    }
+    .Services {
+        flex-direction: column;
+        height: 155rem;
+    }
+    .left_serv {
+        height: 65rem;
+        width: 100%;
+    }
+    .right_serv {
+        width: 100%;
+        height: 100%;
+    }
+    .right_box {
+        width: 100%;
+        left: 0;
+        height: 110rem;
+        flex-direction: column;
+    }
+    .Youtube {
+        height: 125rem;
+        flex-direction: column;
+    }
+    .yt1 {
+        width: 100%;
+    }
+    .icon_box {
+        width: 55rem;
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width:1000px) {
+    .Main_1 {
+        width: 100%;
+    }
+    .Main_2 {
+        width: 100%;
+    }
+    .l_main {
+        padding: 0;
+        margin-right: 2rem;
+        align-items: flex-start;
+    }
+    .l_main p {
+        padding: 0 3rem;
+        font-size: 1.6rem;
+    }
+    .l_main h1 {
+        margin: 2rem 3rem;
+        font-size: 3rem;
+    }
+    .r_main img {
+        width: 100%;
+        height: 100%;
+    }
+    .Text_div {
+        height: 20rem;
+    }
+    .All_vaibhava {
+        padding: 1rem;
+    }
+    .r_main_d img {
+        width: 100%;
+        height: 100%;
+    }
+    .l_main_d h1 {
+        font-size: 3rem;
+    }
+    .l_main_d p {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        padding: 0 5.2rem;
+    }
+    .About_chef {
+        height: 80rem;
+    }
+    .Food_Circle {
+        height: 60rem;
+    }
+    .Services {
+        flex-direction: column;
+        height: 105rem;
+    }
+    .left_serv {
+        width: 100%;
+    }
+    .right_serv {
+        width: 100%;
+    }
+    .right_box {
+        width: 100%;
+        left: 0;
+    }
+    .serv_txt {
+        top: 7rem;
+    }
+    .press_d {
+        width: 25rem;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:900px) {
+    .Main_1 {
+        width: 100%;
+    }
+    .Main_2 {
+        width: 100%;
+    }
+    .l_main {
+        padding: 0;
+        margin-right: 2rem;
+        align-items: flex-start;
+    }
+    .l_main p {
+        padding: 0 3rem;
+        font-size: 1.6rem;
+    }
+    .l_main h1 {
+        margin: 2rem 3rem;
+        font-size: 3rem;
+    }
+    .r_main img {
+        width: 100%;
+        height: 100%;
+    }
+    .Text_div {
+        height: 20rem;
+    }
+    .All_vaibhava {
+        padding: 1rem;
+    }
+    .r_main_d img {
+        width: 100%;
+        height: 100%;
+    }
+    .l_main_d h1 {
+        font-size: 3rem;
+    }
+    .l_main_d p {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        padding: 0 5.2rem;
+    }
+    .About_chef {
+        height: 80rem;
+    }
+    .Food_Circle {
+        height: 60rem;
+    }
+    .Services {
+        flex-direction: column;
+        height: 105rem;
+    }
+    .left_serv {
+        width: 100%;
+    }
+    .right_serv {
+        width: 100%;
+    }
+    .right_box {
+        width: 100%;
+        left: 0;
+    }
+    .serv_txt {
+        top: 7rem;
+    }
+    .press {
+        height: 362rem;
+    }
+    .press_d {
+        width: 55rem;
+    }
+    .press_d img {
+        height: 40rem;
+    }
+    .Press_img_top {
+        flex-direction: column;
+        height: 180rem;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1350px) {
+    .Main_1 {
+        width: 100%;
+    }
+    .Main_2 {
+        width: 100%;
+    }
+    .l_main h1 {
+        margin: 2rem 5rem;
+    }
+    .press_d {
+        width: 25rem;
+    }
+    .icon_box {
+        width: 30rem;
+    }
+    .right_box {
+        width: 75rem;
+        left: -8rem;
+    }
+    .left_serv {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .serv_txt {
+        width: 25rem;
+    }
+    .serv_txt h1 {
+        margin-left: 3.2rem;
+    }
+    .serv_txt p {
+        margin-left: 4.5rem;
+    }
+}
